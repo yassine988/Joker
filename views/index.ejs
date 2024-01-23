@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Joker</title>
+</head>
+
+<body>
+  <div class="user">
+    <img src="/Users/saylmane/Desktop/capstone1/public/images/girlclown.png" alt="">
+  </div>
+  
+  <div class="container">
+
+  
+    <h1>Please select a joke category below 🤡 </h1>
+
+    <form action="/"  id="form" method="post">
+      <select name="type" class="rainbow noselect">
+        <option value="Programming">Programming</option>
+        <option value="Misc">Misc</option>
+        <option value="Pun">Pun</option>
+        <option value="Spooky">Spooky</option>
+        <option value="Christmas">Christmas</option>
+      </select>
+      <button type="submit" class="rainbow noselect form-submit">Submit</button>
+      </form>
+  </div>
+  <%if (locals.data) {%>
+    <div class="center">
+  <h1 class="kok"> <%= data %></h1>
+  </div>
+  <%}%>
+    
+</body>
+
+</html>

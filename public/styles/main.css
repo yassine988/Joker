@@ -1,0 +1,135 @@
+body {
+  font-family: monospace;
+  height: 50%;
+  background-color: #f5ceb3;
+}
+
+h1 {
+  width: 100%;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.container {
+  height: 50%;
+  width: 100%;
+  max-width: 570px;
+  margin: 0 auto;
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.rainbow {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  font-family: 'Parisienne', cursive;
+  font-size: 30px;
+  color: white;
+  border: none;
+  box-shadow: inset 1px 1px 4px rgba(0,0,0,0.6), inset -1px -1px 4px rgba(255,255,255,0.2);
+  border-radius: 5px;
+  background-color: #63a4ff;
+  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.rainbow:hover {
+  animation: rainbow 3s infinite linear;
+}
+
+@keyframes rainbow {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.rainbow:focus {
+  outline: none;
+}
+
+
+
+
+
+button:hover{
+  background-color: orangered;
+}
+
+#form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 80px;
+  grid-column-gap: 10px;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center{
+  padding-top: 50px;
+  width: 50%;
+  margin: auto;
+  font-family: 'GFS Didot', serif;
+}
+
+
+
+
+img{ 
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-left: 800px;
+  margin-top: 70px;
+
+}
+
+
+
+.kok{
+	--b: .5em; /* border width */
+	--c: 3em; /* corner size */
+	--r: 2em; /* corner rounding */
+	position: relative;
+	margin: 1em auto;
+	border: solid var(--b) transparent;
+	padding: 1em;
+  margin-left: 170px;
+	max-width: 23em;
+	font: 1.25em ubuntu, sans-serif;
+	
+	&::before {
+		position: absolute;
+		z-index: -1;
+		inset: calc(-1*var(--b));
+		border: inherit;
+		border-radius: var(--r);
+		background: linear-gradient(orange, deeppink, purple) border-box;
+		--corner: 
+			conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 
+				0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
+		--inner: conic-gradient(red 0 0) padding-box;
+		-webkit-mask: var(--corner), var(--inner);
+		mask-image: source-out;
+						mask: var(--corner) subtract, var(--inner);
+		content: ''
+	}
+}
+
