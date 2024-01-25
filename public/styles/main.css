@@ -6,7 +6,7 @@ body {
 
 h1 {
   width: 100%;
-  margin-bottom: 40px;
+  margin-top: 40px;
   font-weight: bold;
 }
 .container {
@@ -34,6 +34,7 @@ h1 {
 .rainbow {
   width: 200px;
   height: 50px;
+  margin-right: 10px;
   cursor: pointer;
   font-family: 'Parisienne', cursive;
   font-size: 30px;
@@ -81,23 +82,15 @@ button:hover{
   align-items: center;
 }
 
-.center{
-  padding-top: 50px;
-  width: 50%;
-  margin: auto;
-  font-family: 'GFS Didot', serif;
-}
-
-
 
 
 img{ 
-  display: inline-block;
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  margin-left: 800px;
-  margin-top: 70px;
+  margin-top: 50px;
+  margin-right: 30px;
+  
 
 }
 
@@ -111,9 +104,10 @@ img{
 	margin: 1em auto;
 	border: solid var(--b) transparent;
 	padding: 1em;
-  margin-left: 170px;
+  margin-left: 5px;
 	max-width: 23em;
-	font: 1.25em ubuntu, sans-serif;
+	font-family: 'GFS Didot', serif;
+  font-size: 1.25em;
 	
 	&::before {
 		position: absolute;

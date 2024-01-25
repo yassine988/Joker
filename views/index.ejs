@@ -13,12 +13,10 @@
 </head>
 
 <body>
-  <div class="user">
-    <img src="/Users/saylmane/Desktop/capstone1/public/images/girlclown.png" alt="">
-  </div>
   
   <div class="container">
 
+    <img src="/Users/saylmane/Desktop/capstone1/public/images/girlclown.png" alt="">
   
     <h1>Please select a joke category below 🤡 </h1>
 
@@ -32,12 +30,10 @@
       </select>
       <button type="submit" class="rainbow noselect form-submit">Submit</button>
       </form>
+    <%if (locals.data) {%>
+        <h1 class="kok"> <%= data %></h1>
+      <%}%>
   </div>
-  <%if (locals.data) {%>
-    <div class="center">
-  <h1 class="kok"> <%= data %></h1>
-  </div>
-  <%}%>
     
 </body>
 
